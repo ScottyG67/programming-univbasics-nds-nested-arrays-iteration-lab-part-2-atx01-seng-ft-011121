@@ -12,7 +12,9 @@ while day_index < src.count do
     if temp_holding > src[day_index][hour_index]
       temp_holding = src[day_index][hour_index]
     end
-    hour_index+=1 
+    hour_index+=1
+    if hour_index>24
+      exit!
   end
   daily_low << temp_holding
   hour_index+=1
