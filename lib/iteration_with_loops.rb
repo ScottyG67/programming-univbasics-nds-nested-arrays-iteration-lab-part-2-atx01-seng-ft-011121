@@ -5,12 +5,12 @@ def find_min_in_nested_arrays(src)
 daily_low =[]
 day_index = 0 
 
-while day_index < scr.count do
+while day_index < src.count do
   hour_index = 0 
   temp_holding = 5000
-  while hour_index < scr[day_index].count do
-    if temp_holding > scr[day_index][hour_index]
-      temp_holding = scr[day_index][hour_index]
+  while hour_index < src[day_index].count do
+    if temp_holding > src[day_index][hour_index]
+      temp_holding = src[day_index][hour_index]
     end
     hour_index+=1 
   end
