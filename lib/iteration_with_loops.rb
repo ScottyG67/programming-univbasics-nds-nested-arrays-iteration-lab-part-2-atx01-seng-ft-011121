@@ -11,6 +11,11 @@ while day_index < scr.count do
   while hour_index < scr[day_index].count do
     if temp_holding > scr[day_index][hour_index]
       temp_holding = scr[day_index][hour_index]
+    end
+    hour_index+=1 
+  end
+  daily_low << temp_holding
+end
 
-
+temp_holding
 end
