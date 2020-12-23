@@ -15,6 +15,7 @@ while day_index < scr.count do
     hour_index+=1 
   end
   daily_low << temp_holding
+  hour_index+=1
 end
 
 temp_holding
