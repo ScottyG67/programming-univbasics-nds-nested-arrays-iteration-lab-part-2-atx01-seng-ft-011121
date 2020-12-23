@@ -18,7 +18,7 @@ while day_index < src.count do
   end
   daily_low << temp_holding
   binding.pry
-  hour_index+=1
+  day_index+=1
 end
 
 temp_holding
