@@ -1,22 +1,23 @@
 def find_min_in_nested_arrays(src)
   # src will be an array of arrays of integers
   # Produce a new Array that contains the smallest number of each of the nested arrays
-
+require 'pry'
 daily_low =[]
 day_index = 0 
 
 while day_index < src.count do
   hour_index = 0 
   temp_holding = 5000
+  binding.pry
   while hour_index < src[day_index].count do
     if temp_holding > src[day_index][hour_index]
       temp_holding = src[day_index][hour_index]
+    binding.pry
     end
     hour_index+=1
-    if hour_index>24
-      exit!
   end
   daily_low << temp_holding
+  binding.pry
   hour_index+=1
 end
 
