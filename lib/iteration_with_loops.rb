@@ -20,6 +20,5 @@ while day_index < src.count do
   #binding.pry
   day_index+=1
 end
-
-temp_holding
+daily_low
 end
